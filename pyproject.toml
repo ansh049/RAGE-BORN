@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rage-cli"
+version = "0.1.0"
+description = "RAGE — AI-Powered Terminal Agent. Your AI operating companion for Linux."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "Ansh Verma"},
+]
+keywords = ["ai", "terminal", "agent", "cli", "automation"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: System :: Systems Administration",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "requests>=2.31.0",
+    "rich>=13.0.0",
+    "prompt_toolkit>=3.0.0",
+    "pyfiglet>=1.0.0",
+    "playwright>=1.40.0",
+    "pyautogui>=0.9.54",
+    "pynput>=1.7.6",
+]
+
+[project.scripts]
+rage = "rage.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/ansh049/RAGE-BORN"
+Repository = "https://github.com/ansh049/RAGE-BORN"
+
+[tool.setuptools.packages.find]
+include = ["rage*"]

@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+eggs/
+*.egg
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# RAGE runtime
+.rage/
+
+# Playwright
+playwright-data/
+repo-reference/
+
+# Text files
+API.txt
+models.txt
+project.txt
+
+# Test files
+test_bg.py
+test_cdp.py
+system_info_test.py
+
+# Secrets
+.env
